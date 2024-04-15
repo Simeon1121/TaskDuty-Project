@@ -2,6 +2,10 @@ import React from 'react'
 import '../Style/EditTask.css'
 
 const EditTask = () => {
+
+  const scrollToTop = () => {
+    window.scroll({ top: 0, behavior: "smooth" });
+  };
   return (
     <>
     <h1 className='container'>
@@ -42,7 +46,7 @@ const EditTask = () => {
 
 <div className='d-flex align-items-center justify-content-center mt-4'>
   <h4>
-<a href="http://" target="_blank" rel="noopener noreferrer"> Back To Top </a> 
+<a href="http://" target="_blank" rel="noopener noreferrer" onClick={scrollToTop}> Back To Top </a> 
   </h4>
 </div>
   

@@ -5,6 +5,10 @@ import '../Style/AllTask.css'
 
 
 const AllTask = () => {
+
+  const scrollToTop = () => {
+    window.scroll({ top: 0, behavior: "smooth" });
+  };
   return (
     <>
 
@@ -91,7 +95,7 @@ const AllTask = () => {
 </div>
 <hr />
 <div className="d-flex justify-content-center">
-   <button type="button" class="btn btn-info align-items-center">Back to Top</button>
+   <button type="button" class="btn btn-info align-items-center" onClick={scrollToTop}>Back to Top</button>
 </div>
 
 </section>

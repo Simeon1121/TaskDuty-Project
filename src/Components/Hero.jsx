@@ -15,7 +15,7 @@ const Hero = () => {
     </p>
     <button className="btn btn1 btn-primary btn-lg"> Go to my Task</button>
     </div>
-   <div className='col-lg-3'>
+   <div className='col-lg-3 d-none d-lg-block'>
 <img src= {womanLogo} alt="woman - logo" className="img-fluid "  />
    </div>
 
